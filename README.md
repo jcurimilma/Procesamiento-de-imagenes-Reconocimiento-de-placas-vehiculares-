@@ -1,25 +1,33 @@
-# Reconocimiento de Placas Vehiculares con OpenCV
+# Reconocimiento de Placas Vehiculares mediante Procesamiento Digital de Imágenes
 
 ## Descripción
-Este proyecto implementa un sistema básico de reconocimiento de placas vehiculares desarrollado en Python utilizando la biblioteca OpenCV.  
-El sistema se basa exclusivamente en técnicas clásicas de procesamiento digital de imágenes y visión por computadora, sin emplear algoritmos de inteligencia artificial ni aprendizaje automático.
+Este proyecto implementa un sistema básico de reconocimiento de placas vehiculares utilizando Python y la biblioteca OpenCV.  
+El desarrollo se basa exclusivamente en técnicas clásicas de procesamiento digital de imágenes y visión por computadora, sin el uso de algoritmos de inteligencia artificial ni aprendizaje automático.
 
-El objetivo principal es detectar y segmentar la región de la placa vehicular a partir de imágenes, con fines académicos y de aprendizaje.
+El sistema permite detectar la placa vehicular y realizar el reconocimiento de sus caracteres mediante métodos tradicionales de segmentación y análisis de imágenes.
+
+---
+
+## Contexto Académico
+Este proyecto fue desarrollado como parte de la asignatura **Procesamiento Digital de Señales**, correspondiente al **cuarto ciclo** de la carrera de **Ingeniería en Telecomunicaciones**.
+
+El objetivo académico del proyecto es aplicar los conceptos teóricos del procesamiento digital de señales e imágenes en un problema práctico de visión por computadora.
 
 ---
 
 ## Objetivo
-Desarrollar un sistema básico de detección de placas vehiculares mediante técnicas tradicionales de procesamiento de imágenes, permitiendo comprender el funcionamiento y las limitaciones de los métodos clásicos de visión por computadora.
+Desarrollar un sistema básico de detección de placas vehiculares y reconocimiento de sus caracteres mediante técnicas tradicionales de procesamiento de imágenes, con fines académicos y formativos.
 
 ---
 
 ## Alcance del Proyecto
 - Procesamiento de imágenes vehiculares.
 - Detección y segmentación de placas.
-- Aplicación de técnicas determinísticas de visión por computadora.
-- Uso con imágenes estáticas para fines académicos.
+- Segmentación de caracteres presentes en la placa.
+- Reconocimiento básico de caracteres mediante técnicas clásicas.
+- Uso exclusivo de métodos determinísticos de procesamiento digital de imágenes.
 
-Este proyecto **no incluye** reconocimiento de caracteres (OCR) ni modelos basados en inteligencia artificial.
+Este proyecto **no emplea** modelos de inteligencia artificial ni aprendizaje automático.
 
 ---
 
@@ -30,9 +38,17 @@ El sistema sigue las siguientes etapas:
 2. Conversión de la imagen a escala de grises.
 3. Aplicación de filtros para reducción de ruido.
 4. Detección de bordes.
-5. Aplicación de operaciones morfológicas.
-6. Detección de contornos.
-7. Selección de regiones candidatas a placas según criterios geométricos.
+5. Operaciones morfológicas para resaltar la región de la placa.
+6. Detección y selección de contornos candidatos a placa.
+7. Segmentación de los caracteres de la placa.
+8. Reconocimiento básico de caracteres mediante análisis de forma y tamaño.
+
+---
+
+## Implementación
+La implementación del sistema se encuentra desarrollada en el siguiente notebook, donde se documenta paso a paso el proceso completo de detección y reconocimiento de placas vehiculares:
+
+[02_DetectorPlacasCar.ipynb](02_DetectorPlacasCar.ipynb)
 
 ---
 
@@ -49,6 +65,14 @@ El sistema sigue las siguientes etapas:
 - Python 3.8 o superior
 - OpenCV
 - NumPy
+- Jupyter Notebook
 - Sistema operativo Windows, Linux o macOS
 
 ---
+
+## Instalación
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/tu_usuario/nombre_del_repositorio.git
+
