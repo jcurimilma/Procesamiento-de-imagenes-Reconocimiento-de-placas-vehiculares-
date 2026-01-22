@@ -74,5 +74,5 @@ La implementación del sistema se encuentra desarrollada en el siguiente noteboo
 Clonar el repositorio:
 
 ```bash
-git clone https://github.com/tu_usuario/nombre_del_repositorio.git
+git clone https://github.com/jcurimilma/Procesamiento-de-imagenes-Reconocimiento-de-placas-vehiculares-.git
 
